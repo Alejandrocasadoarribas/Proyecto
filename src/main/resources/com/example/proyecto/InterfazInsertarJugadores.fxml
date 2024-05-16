@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyecto.Controlador.ControladorCambiar">
+   <children>
+      <Label layoutX="220.0" layoutY="26.0" text="Insertar jugadores">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="100.0" text="Nombre" />
+      <TextField fx:id="nombreJugador" layoutX="108.0" layoutY="96.0" />
+      <Label layoutX="317.0" layoutY="100.0" text="Apellido 1" />
+      <TextField fx:id="apellido" layoutX="412.0" layoutY="96.0" />
+      <Label layoutX="26.0" layoutY="154.0" text="Edad" />
+      <TextField fx:id="edad" layoutX="108.0" layoutY="150.0" />
+      <Label layoutX="317.0" layoutY="204.0" text="Minutos jugados" />
+      <Label layoutX="317.0" layoutY="154.0" text="Posicion" />
+      <TextField fx:id="minutosJugados" layoutX="412.0" layoutY="150.0" />
+      <TextField fx:id="posicion" layoutX="108.0" layoutY="200.0" />
+      <Label layoutX="26.0" layoutY="204.0" text="Dorsal" />
+      <TextField fx:id="dorsal" layoutX="413.0" layoutY="200.0" />
+      <Label layoutX="24.0" layoutY="254.0" text="Goles" />
+      <TextField fx:id="goles" layoutX="109.0" layoutY="250.0" />
+      <Label layoutX="317.0" layoutY="254.0" text="Asistencias" />
+      <TextField fx:id="asistencias" layoutX="414.0" layoutY="250.0" />
+      <Button layoutX="351.0" layoutY="329.0" mnemonicParsing="false" text="Enviar" onAction="#escribirDatosJugadores"/>
+      <Button layoutX="158.0" layoutY="329.0" mnemonicParsing="false" onAction="#volverInterfazInsertarEquipo" text="Volver" />
+   </children>
+</AnchorPane>

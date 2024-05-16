@@ -1,0 +1,1 @@
+nombre='uboeb', apellido1='ubib', edad=1, posicion='jce', dorsal=1, minutosJugados=10, goles=1, asistencias=1nombre='Vini', apellido1='jr', edad=24, posicion='EI', dorsal=7, minutosJugados=3365, goles=20, asistencias=10

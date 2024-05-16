@@ -1,0 +1,2 @@
+Real Madrid [ 1=Casillas, 2=Carvajal, 4=Ramos, 7=Ronaldo, 12=Marcelo,]
+Barcelona [ 1=Ter stegen, 2=Jordi Alba, 4=Pique, 9=Luis Suarez, 10=Messi,]
