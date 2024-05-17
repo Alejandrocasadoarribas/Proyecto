@@ -21,15 +21,21 @@ public class Jugador {
         this.asistencias = asistencias;
     }
 
+    public Jugador(String linea) {
+        String[] datos = linea.split(" , ");
+        this.nombre = datos[0];
+        this.apellido1 = datos[1];
+        this.edad = Integer.parseInt(datos[2]);
+        this.minutosJugados = Integer.parseInt(datos[3]);
+        this.posicion = datos[4];
+        this.dorsal = Integer.parseInt(datos[5]);
+        this.goles = Integer.parseInt(datos[6]);
+        this.asistencias = Integer.parseInt(datos[7]);
+    }
+
     @Override
     public String toString() {
-        return "nombre='" + nombre + '\'' +
-                ", apellido1='" + apellido1 + '\'' +
-                ", edad=" + edad +
-                ", posicion='" + posicion + '\'' +
-                ", dorsal=" + dorsal +
-                ", minutosJugados=" + minutosJugados +
-                ", goles=" + goles +
-                ", asistencias=" + asistencias;
+        return nombre + " | " + apellido1 + " | " + edad + " | " + posicion + " | " + dorsal+ " | " + minutosJugados + " | " + goles + " | " + asistencias;
     }
+
 }

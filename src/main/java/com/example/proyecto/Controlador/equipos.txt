@@ -1,1 +1,5 @@
-nombre='uboeb', apellido1='ubib', edad=1, posicion='jce', dorsal=1, minutosJugados=10, goles=1, asistencias=1nombre='Vini', apellido1='jr', edad=24, posicion='EI', dorsal=7, minutosJugados=3365, goles=20, asistencias=10
+Real Madrid{ [Vinicius | Jr | 24 | EI | 7 | 3985 | 20 | 10]}
+Juventus{ [Dusan | Vlahovic | 25 | DC | 9 | 2765 | 12 | 7]}
+Barcelona{ [Lamine | Yamal | 16 | ED | 23 | 3478 | 7 | 10]}
+Real Madrid | [Dani | Carvajal | 32 | LD | 2 | 4093 | 2 | 7]
+Bayern Munich | [Manuel | Neuer | 37 | POR | 1 | 3964 | 0 | 1]

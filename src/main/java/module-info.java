@@ -4,7 +4,6 @@ module com.example.proyecto {
 
 
     opens com.example.proyecto to javafx.fxml;
-    exports com.example.proyecto;
 
     exports com.example.proyecto.Controlador;
     opens com.example.proyecto.Controlador to javafx.fxml;

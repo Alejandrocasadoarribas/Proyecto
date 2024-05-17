@@ -4,22 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1a2bc8e-5045-4fc0-81cb-5441a3b5853f" name="Changes" comment="Proyecto">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/Jugador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/equipos.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Prueba.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/proyecto/equipos.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/proyecto/Interfaz1.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/proyecto/InterfazInsertarEquipo.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/proyecto/InterfazInsertarJugadores.fxml" afterDir="false" />
+    <list default="true" id="a1a2bc8e-5045-4fc0-81cb-5441a3b5853f" name="Changes" comment="Me he quedado por crear el mapa&lt;String, Jugador&gt; y lo demas funciona correctamente y se escriben los datos en el fichero">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Prueba.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyecto/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Modelo/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyecto/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/ControladorCambiar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/ControladorCambiar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/ControladorInsertar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/Jugador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/Jugador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/equipos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/equipos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Prueba.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyecto/equipos.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/proyecto/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/proyecto/Interfaz1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/proyecto/Interfaz1.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/proyecto/InterfazInsertarEquipo.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/proyecto/InterfazInsertarEquipo.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/proyecto/InterfazInsertarJugadores.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/proyecto/InterfazInsertarJugadores.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +52,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -86,9 +82,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.example.proyecto.Controlador.Prueba" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.proyecto.Controlador.Prueba" />
+      <module name="Proyecto" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.proyecto.Controlador.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.App" />
+        <item itemvalue="Application.com.example.proyecto.Controlador.Prueba" />
         <item itemvalue="Application.Prueba" />
       </list>
     </recent_temporary>
@@ -103,7 +113,8 @@
       <updated>1715869304030</updated>
       <workItem from="1715869305079" duration="3939000" />
       <workItem from="1715873425428" duration="2598000" />
-      <workItem from="1715881810881" duration="6828000" />
+      <workItem from="1715881810881" duration="8096000" />
+      <workItem from="1715940707716" duration="7296000" />
     </task>
     <task id="LOCAL-00001" summary="Proyecto">
       <option name="closed" value="true" />
@@ -113,7 +124,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715869877694</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Me he quedado por crear el mapa&lt;String, Jugador&gt; y lo demas funciona correctamente y se escriben los datos en el fichero">
+      <option name="closed" value="true" />
+      <created>1715889273898</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715889273898</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,6 +151,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Proyecto" />
-    <option name="LAST_COMMIT_MESSAGE" value="Proyecto" />
+    <MESSAGE value="Me he quedado por crear el mapa&lt;String, Jugador&gt; y lo demas funciona correctamente y se escriben los datos en el fichero" />
+    <option name="LAST_COMMIT_MESSAGE" value="Me he quedado por crear el mapa&lt;String, Jugador&gt; y lo demas funciona correctamente y se escriben los datos en el fichero" />
   </component>
 </project>

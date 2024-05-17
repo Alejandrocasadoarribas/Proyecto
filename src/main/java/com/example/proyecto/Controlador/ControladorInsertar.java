@@ -12,8 +12,10 @@ import javafx.stage.Stage;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
 
-public class ControladorCambiar {
+public class ControladorInsertar {
 
     public TextField nombreEquipo;
     public TextField nombreJugador;
@@ -25,6 +27,8 @@ public class ControladorCambiar {
     public TextField goles;
     public TextField asistencias;
 
+    HashMap<String, ArrayList<Jugador>> mapaEquipos = new HashMap<>();
+
     File archivo = new File("src/main/java/com/example/proyecto/Controlador/equipos.txt");
 
     public void cambiarInterfaz(ActionEvent event) throws IOException {
@@ -33,17 +37,6 @@ public class ControladorCambiar {
         Stage stage = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
         stage.setScene(scene);
         stage.show();
-        FileWriter fw = null;
-        try {
-            String equipo = nombreEquipo.getText();
-            fw = new FileWriter(archivo,true);
-            fw.write(String.valueOf(nombreEquipo));
-
-        }catch (Exception e){
-            System.out.println("Ha ocurrido una excepcion");
-        }finally {
-            fw.close();
-        }
     }
 
     public void cambiarInterfaz2(ActionEvent event) throws IOException {
@@ -69,13 +62,35 @@ public class ControladorCambiar {
         stage.setScene(scene);
         stage.show();
     }
+    public void escribirEquipo(){
+        FileWriter fw = null;
+        try {
+            fw = new FileWriter(archivo,true);
+            fw.write("\n" + nombreEquipo.getText() + " | ");
+
+        }catch (NullPointerException e){
+            System.out.println("No se ha podido escribir e nombre del equipo");
+        }catch (IOException e) {
+            throw new RuntimeException(e);
+        }finally {
+            try {
+                fw.close();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
+
+    }
 
     public void escribirDatosJugadores() {
         FileWriter fw = null;
         try {
             fw = new FileWriter(archivo,true);
-            fw.write(String.valueOf(new Jugador(nombreJugador.getText(),apellido.getText(),Integer.parseInt(edad.getText()),minutosJugados.getText(),Integer.parseInt(posicion.getText()),Integer.parseInt(dorsal.getText()),Integer.parseInt(goles.getText()),Integer.parseInt(asistencias.getText()))));
-        } catch (IOException e) {
+            ArrayList<Jugador> jugadores = new ArrayList<>();
+
+            jugadores.add((new Jugador(nombreJugador.getText(),apellido.getText(),Integer.parseInt(edad.getText()),minutosJugados.getText(),Integer.parseInt(posicion.getText()),Integer.parseInt(dorsal.getText()),Integer.parseInt(goles.getText()),Integer.parseInt(asistencias.getText()))));
+            fw.write(String.valueOf(jugadores));
+        }catch (IOException e) {
             throw new RuntimeException(e);
         }finally {
             try {
