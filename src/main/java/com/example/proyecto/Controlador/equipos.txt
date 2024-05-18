@@ -1,5 +1,9 @@
-Real Madrid{ [Vinicius | Jr | 24 | EI | 7 | 3985 | 20 | 10]}
-Juventus{ [Dusan | Vlahovic | 25 | DC | 9 | 2765 | 12 | 7]}
-Barcelona{ [Lamine | Yamal | 16 | ED | 23 | 3478 | 7 | 10]}
+Real Madrid | [Vinicius | Jr | 24 | EI | 7 | 3985 | 20 | 10]
+Juventus | [Dusan | Vlahovic | 25 | DC | 9 | 2765 | 12 | 7]
+Barcelona | [Lamine | Yamal | 16 | ED | 23 | 3478 | 7 | 10]
 Real Madrid | [Dani | Carvajal | 32 | LD | 2 | 4093 | 2 | 7]
 Bayern Munich | [Manuel | Neuer | 37 | POR | 1 | 3964 | 0 | 1]
+Real Madrid | [Joselu | Mato | 32 | DC | 14 | 1872 | 12 | 4]
+Real Madrid | [Antonio | Rudiger | 29 | DFC | 3 | 3864 | 2 | 0]
+PSG | [Kylian | Mbappe | 26 | EI | 9 | 3456 | 23 | 12]
+Real Madrid | [Toni | Kroos | 35 | MC | 8 | 3567 | 3 | 8]

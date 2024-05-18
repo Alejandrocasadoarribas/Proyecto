@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
@@ -26,8 +27,6 @@ public class ControladorInsertar {
     public TextField dorsal;
     public TextField goles;
     public TextField asistencias;
-
-    HashMap<String, ArrayList<Jugador>> mapaEquipos = new HashMap<>();
 
     File archivo = new File("src/main/java/com/example/proyecto/Controlador/equipos.txt");
 
@@ -63,10 +62,19 @@ public class ControladorInsertar {
         stage.show();
     }
     public void escribirEquipo(){
+        String nombre = nombreEquipo.getText().trim();
+        if (nombre.isEmpty()) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error de Validación");
+            alert.setHeaderText(null);
+            alert.setContentText("El nombre del equipo es obligatorio.");
+            alert.showAndWait();
+            return;
+        }
         FileWriter fw = null;
         try {
             fw = new FileWriter(archivo,true);
-            fw.write("\n" + nombreEquipo.getText() + " | ");
+            fw.write("\n" + String.valueOf(new Equipo(nombre)));
 
         }catch (NullPointerException e){
             System.out.println("No se ha podido escribir e nombre del equipo");
@@ -83,12 +91,23 @@ public class ControladorInsertar {
     }
 
     public void escribirDatosJugadores() {
+
+        String nombre = nombreJugador.getText().trim();
+        String apellidoJugador = apellido.getText().trim();
+        int edadJugador = Integer.parseInt(edad.getText().trim());
+        String minutos = minutosJugados.getText().trim();
+        int posicionJugador = Integer.parseInt(posicion.getText().trim());
+        int dorsalJugador = Integer.parseInt(dorsal.getText().trim());
+        int golesJugador = Integer.parseInt(goles.getText().trim());
+        int asistenciasJugador = Integer.parseInt(asistencias.getText().trim());
+
+
         FileWriter fw = null;
         try {
             fw = new FileWriter(archivo,true);
             ArrayList<Jugador> jugadores = new ArrayList<>();
 
-            jugadores.add((new Jugador(nombreJugador.getText(),apellido.getText(),Integer.parseInt(edad.getText()),minutosJugados.getText(),Integer.parseInt(posicion.getText()),Integer.parseInt(dorsal.getText()),Integer.parseInt(goles.getText()),Integer.parseInt(asistencias.getText()))));
+            jugadores.add((new Jugador(nombre,apellidoJugador,edadJugador,minutos,posicionJugador,dorsalJugador,golesJugador,asistenciasJugador)));
             fw.write(String.valueOf(jugadores));
         }catch (IOException e) {
             throw new RuntimeException(e);
@@ -99,6 +118,12 @@ public class ControladorInsertar {
                 throw new RuntimeException(e);
             }
         }
+    }
+
+
+    //NOS VAMOS YA A LA SEGUNDA PESTAÑA LLAMADA BUSCAR
+    public void buscarJugadoresPorEquipo(){
+
     }
     @FXML
     private Label welcomeText;

@@ -1,6 +1,6 @@
 package com.example.proyecto.Controlador;
 
-public class Jugador {
+public class Jugador{
     String nombre;
     String apellido1;
     int edad;
@@ -21,9 +21,10 @@ public class Jugador {
         this.asistencias = asistencias;
     }
 
+
     public Jugador(String linea) {
         String[] datos = linea.split(" , ");
-        this.nombre = datos[0];
+        this.nombre = datos[1];
         this.apellido1 = datos[1];
         this.edad = Integer.parseInt(datos[2]);
         this.minutosJugados = Integer.parseInt(datos[3]);
