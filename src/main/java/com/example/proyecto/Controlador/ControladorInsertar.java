@@ -48,7 +48,14 @@ public class ControladorInsertar {
     }
 
     public void cambiarInterfaz2(ActionEvent event) throws IOException {
-
+        if (nombreEquipo.getText().trim().isEmpty()) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error de Validación");
+            alert.setHeaderText(null);
+            alert.setContentText("El nombre del equipo es obligatorio.");
+            alert.showAndWait();
+            return;
+        }
         Parent root = FXMLLoader.load(getClass().getResource("/com/example/proyecto/InterfazInsertarJugadores.fxml"));
         Scene scene = new Scene(root);
         Stage stage = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
@@ -109,7 +116,7 @@ public class ControladorInsertar {
     }
 
     public void escribirDatosJugadores(){
-        guardarDatos();
+
         if (!equipo.datosCompletos()) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error de Validación");
@@ -142,6 +149,7 @@ public class ControladorInsertar {
         Stage stage = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
         stage.setScene(scene);
         stage.show();
+
     }
 
     public void volverInterfazInsertarEquipo(ActionEvent event) throws IOException {

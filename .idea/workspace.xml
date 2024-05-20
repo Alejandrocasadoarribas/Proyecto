@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1a2bc8e-5045-4fc0-81cb-5441a3b5853f" name="Changes" comment="Ya he hecho la pestaña para insertar jugadores y ahora toca la de buscar por equipos">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/Modelo.java" afterDir="false" />
+    <list default="true" id="a1a2bc8e-5045-4fc0-81cb-5441a3b5853f" name="Changes" comment="Pestaña insertar hecha">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/ControladorInsertar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/ControladorInsertar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/Equipo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/Equipo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/equipos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/equipos.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/proyecto/InterfazInsertarJugadores.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/proyecto/InterfazInsertarJugadores.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/proyecto/Interfaz1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/proyecto/Interfaz1.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +118,7 @@
       <workItem from="1716201014963" duration="3349000" />
       <workItem from="1716211997041" duration="1297000" />
       <workItem from="1716216719285" duration="106000" />
-      <workItem from="1716216858997" duration="1886000" />
+      <workItem from="1716216858997" duration="3963000" />
     </task>
     <task id="LOCAL-00001" summary="Proyecto">
       <option name="closed" value="true" />
@@ -154,7 +152,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716027644815</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Pestaña insertar hecha">
+      <option name="closed" value="true" />
+      <created>1716219044349</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1716219044349</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,6 +181,7 @@
     <MESSAGE value="Proyecto" />
     <MESSAGE value="Me he quedado por crear el mapa&lt;String, Jugador&gt; y lo demas funciona correctamente y se escriben los datos en el fichero" />
     <MESSAGE value="Ya he hecho la pestaña para insertar jugadores y ahora toca la de buscar por equipos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ya he hecho la pestaña para insertar jugadores y ahora toca la de buscar por equipos" />
+    <MESSAGE value="Pestaña insertar hecha" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pestaña insertar hecha" />
   </component>
 </project>
