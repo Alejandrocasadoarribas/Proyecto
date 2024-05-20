@@ -27,7 +27,8 @@
       <TextField fx:id="goles" layoutX="109.0" layoutY="250.0" />
       <Label layoutX="317.0" layoutY="254.0" text="Asistencias" />
       <TextField fx:id="asistencias" layoutX="414.0" layoutY="250.0" />
-      <Button layoutX="351.0" layoutY="329.0" mnemonicParsing="false" text="Enviar" onAction="#escribirDatosJugadores"/>
-      <Button layoutX="158.0" layoutY="329.0" mnemonicParsing="false" onAction="#volverInterfazInsertarEquipo" text="Volver" />
+      <Button layoutX="450.0" layoutY="329.0" mnemonicParsing="false"  text="Enviar" onAction="#escribirDatosJugadores"/>
+      <Button layoutX="150.0" layoutY="329.0" mnemonicParsing="false" onAction="#volverInterfazInsertarEquipo" text="Volver" />
+      <Button layoutX="300.0" layoutY="329.0" mnemonicParsing="false" text="Guardar" onAction="#guardarDatos"/>
    </children>
 </AnchorPane>

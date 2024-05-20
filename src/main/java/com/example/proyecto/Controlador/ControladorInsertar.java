@@ -30,6 +30,15 @@ public class ControladorInsertar {
 
     File archivo = new File("src/main/java/com/example/proyecto/Controlador/equipos.txt");
 
+    private Modelo modelo;
+    private Equipo equipo;
+
+    public void initialize() {
+        modelo = Modelo.getInstance();
+        equipo = modelo.getEquipo();
+    }
+
+
     public void cambiarInterfaz(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("/com/example/proyecto/InterfazInsertarEquipo.fxml"));
         Scene scene = new Scene(root);
@@ -39,11 +48,92 @@ public class ControladorInsertar {
     }
 
     public void cambiarInterfaz2(ActionEvent event) throws IOException {
+
         Parent root = FXMLLoader.load(getClass().getResource("/com/example/proyecto/InterfazInsertarJugadores.fxml"));
         Scene scene = new Scene(root);
         Stage stage = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
         stage.setScene(scene);
         stage.show();
+        escribirEquipo();
+    }
+
+    public void escribirEquipo(){
+        String nombre = nombreEquipo.getText().trim();
+        if (nombre.isEmpty()) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error de Validación");
+            alert.setHeaderText(null);
+            alert.setContentText("El nombre del equipo es obligatorio.");
+            alert.showAndWait();
+            return;
+        }
+        equipo.setNombreEquipo(nombre);
+    }
+
+    public void guardarDatos() {
+        try {
+            if (nombreJugador.getText().trim().isEmpty() ||
+                    apellido.getText().trim().isEmpty() ||
+                    edad.getText().trim().isEmpty() ||
+                    minutosJugados.getText().trim().isEmpty() ||
+                    posicion.getText().trim().isEmpty() ||
+                    dorsal.getText().trim().isEmpty() ||
+                    goles.getText().trim().isEmpty() ||
+                    asistencias.getText().trim().isEmpty()) {
+
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setTitle("Error de Validación");
+                alert.setHeaderText(null);
+                alert.setContentText("Todos los campos son obligatorios.");
+                alert.showAndWait();
+                return;
+            }
+            String nombre = nombreJugador.getText().trim();
+            String apellidoJugador = apellido.getText().trim();
+            int edadJugador = Integer.parseInt(edad.getText().trim());
+            String minutos = minutosJugados.getText().trim();
+            int posicionJugador = Integer.parseInt(posicion.getText().trim());
+            int dorsalJugador = Integer.parseInt(dorsal.getText().trim());
+            int golesJugador = Integer.parseInt(goles.getText().trim());
+            int asistenciasJugador = Integer.parseInt(asistencias.getText().trim());
+
+            Jugador jugador = new Jugador(nombre, apellidoJugador, edadJugador, minutos, posicionJugador, dorsalJugador, golesJugador, asistenciasJugador);
+            equipo.añadirJugador(jugador);
+        } catch (NumberFormatException e) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error de Validación");
+            alert.setHeaderText(null);
+            alert.setContentText("La edad, posición, dorsal, goles y asistencias deben ser números enteros.");
+            alert.showAndWait();
+        }
+    }
+
+    public void escribirDatosJugadores(){
+        guardarDatos();
+        if (!equipo.datosCompletos()) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error de Validación");
+            alert.setHeaderText(null);
+            alert.setContentText("Faltan datos del equipo o jugadores.");
+            alert.showAndWait();
+            return;
+        }
+        FileWriter fw = null;
+            try {
+                fw = new FileWriter(archivo,true);
+                fw.write("\n" + equipo.getNombreEquipo() + " | ");
+                for (Jugador jugador:equipo.getJugadores()) {
+                    fw.write(jugador + " | ");
+                }
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }finally {
+                try {
+                    fw.close();
+                } catch (IOException e) {
+                    System.out.println("No se puede cerrar el fw");
+                }
+            }
     }
 
     public void volverInterfaz1(ActionEvent event) throws IOException {
@@ -61,70 +151,10 @@ public class ControladorInsertar {
         stage.setScene(scene);
         stage.show();
     }
-    public void escribirEquipo(){
-        String nombre = nombreEquipo.getText().trim();
-        if (nombre.isEmpty()) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Error de Validación");
-            alert.setHeaderText(null);
-            alert.setContentText("El nombre del equipo es obligatorio.");
-            alert.showAndWait();
-            return;
-        }
-        FileWriter fw = null;
-        try {
-            fw = new FileWriter(archivo,true);
-            fw.write("\n" + String.valueOf(new Equipo(nombre)));
-
-        }catch (NullPointerException e){
-            System.out.println("No se ha podido escribir e nombre del equipo");
-        }catch (IOException e) {
-            throw new RuntimeException(e);
-        }finally {
-            try {
-                fw.close();
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-        }
-
-    }
-
-    public void escribirDatosJugadores() {
-
-        String nombre = nombreJugador.getText().trim();
-        String apellidoJugador = apellido.getText().trim();
-        int edadJugador = Integer.parseInt(edad.getText().trim());
-        String minutos = minutosJugados.getText().trim();
-        int posicionJugador = Integer.parseInt(posicion.getText().trim());
-        int dorsalJugador = Integer.parseInt(dorsal.getText().trim());
-        int golesJugador = Integer.parseInt(goles.getText().trim());
-        int asistenciasJugador = Integer.parseInt(asistencias.getText().trim());
-
-
-        FileWriter fw = null;
-        try {
-            fw = new FileWriter(archivo,true);
-            ArrayList<Jugador> jugadores = new ArrayList<>();
-
-            jugadores.add((new Jugador(nombre,apellidoJugador,edadJugador,minutos,posicionJugador,dorsalJugador,golesJugador,asistenciasJugador)));
-            fw.write(String.valueOf(jugadores));
-        }catch (IOException e) {
-            throw new RuntimeException(e);
-        }finally {
-            try {
-                fw.close();
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-        }
-    }
 
 
     //NOS VAMOS YA A LA SEGUNDA PESTAÑA LLAMADA BUSCAR
-    public void buscarJugadoresPorEquipo(){
 
-    }
     @FXML
     private Label welcomeText;
 
