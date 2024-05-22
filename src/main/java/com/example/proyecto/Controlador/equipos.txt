@@ -1,4 +1,5 @@
 Atletico Nacional | Johan | Enciso | 20 | DFC | 11 | 3456 | 5 | 6 |
 Real Madrid | Alex | Casado | 21 | DFC | 4 | 2876 | 4 | 5 |
-ytfuy | hghj | fghjk | 56 | fcgh | 567 | 567 | 5678 | 5678 | 
-qwet | fhgjh | gvjhbj | 5768 | fgg | 456 | 5567 | 657 | 567 | 
+Real Madrid | Cristiano | Ronaldo | 38 | DC | 7 | 3456 | 54 | 12 |
+Real Madrid | Antonio | Kroos | 34 | MC | 8 | 6433 | 6 | 9 |
+Acletico Nacional | pepe | iniesto | 39 | DC | 7 | 100 | 10 | 10 | 

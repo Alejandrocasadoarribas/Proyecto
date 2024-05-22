@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyecto.Controlador.ControladorInsertar">
+  <tabs>
+    <Tab text="Añadir equipo">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="99.0" layoutY="47.0" prefHeight="138.0" prefWidth="402.0" text="En esta pagina se pueden insertar equipos y jugadores de todas las ligas del mundo que se guardaran en una base de datos con la que podrás buscar sus estadisticas, máximos goleadores etc." textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                 <Button layoutX="460.0" layoutY="269.0" mnemonicParsing="false" onAction="#cambiarInterfaz" style="-fx-font-size: 20px; -fx-font-family: Arial; -fx-border-radius: 20px; -fx-background-radius: 20px;" text="Entrar">
+                   <font>
+                     <Font size="14.0" />
+                   </font></Button>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="225.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+                      <image>
+                          <Image url="@Imagenes/futbol.png" />
+                      </image>
+                    </ImageView>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Buscar Equipo">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="99.0" layoutY="47.0" prefHeight="138.0" prefWidth="402.0" text="En esta pestaña se podrá filtrar por un equipo en concreto para mostrar todos sus jugadores" textAlignment="CENTER" wrapText="true" >
+                      <font>
+                          <Font size="14.0" />
+                      </font></Label>
+                   <Button layoutX="460.0" layoutY="269.0" mnemonicParsing="false"  style="-fx-font-size: 20px; -fx-font-family: Arial; -fx-border-radius: 20px; -fx-background-radius: 20px;" text="Entrar" onAction="#cambiarInterfazBuscarEquipos">
+                       <font>
+                           <Font size="14.0" />
+                       </font></Button>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Untitled Tab 3">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>

@@ -7,14 +7,18 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
 
 public class ControladorInsertar {
 
@@ -27,6 +31,8 @@ public class ControladorInsertar {
     public TextField dorsal;
     public TextField goles;
     public TextField asistencias;
+
+
 
     File archivo = new File("src/main/java/com/example/proyecto/Controlador/equipos.txt");
 
@@ -45,6 +51,7 @@ public class ControladorInsertar {
         Stage stage = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
         stage.setScene(scene);
         stage.show();
+
     }
 
     public void cambiarInterfaz2(ActionEvent event) throws IOException {
@@ -144,7 +151,7 @@ public class ControladorInsertar {
     }
 
     public void volverInterfaz1(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/com/example/proyecto/Interfaz1.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/com/example/proyecto/InterfazBuena.fxml"));
         Scene scene = new Scene(root);
         Stage stage = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
         stage.setScene(scene);
@@ -161,7 +168,14 @@ public class ControladorInsertar {
     }
 
 
-    //NOS VAMOS YA A LA SEGUNDA PESTAÑA LLAMADA BUSCAR
+    //NOS VAMOS YA A LA SEGUNDA PESTAÑA para filtrar por el equipo
+    public void cambiarInterfazBuscarEquipos(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/com/example/proyecto/InterfazBuscarEquipo.fxml"));
+        Scene scene = new Scene(root);
+        Stage stage = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
 
     @FXML
     private Label welcomeText;

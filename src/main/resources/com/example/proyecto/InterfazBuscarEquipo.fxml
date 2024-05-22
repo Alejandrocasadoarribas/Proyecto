@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import javafx.scene.text.Font?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyecto.Controlador.ControladorMostrarJugadores">
+   <children>
+       <Label layoutX="228.0" layoutY="28.0" text="Buscar equipos">
+           <font>
+               <Font size="20.0" />
+           </font>
+       </Label>
+       <Label layoutX="215.0" layoutY="107.0" text="Introduce el nombre del equipo" />
+       <TextField fx:id="nombreEquipo" layoutX="241.0" layoutY="156.0" prefHeight="26.0" prefWidth="115.0" />
+       <Button layoutX="346.0" layoutY="252.0" mnemonicParsing="false" onAction="#cambiarInterfazMostrar"  text="Buscar" />
+       <Button layoutX="176.0" layoutY="252.0" mnemonicParsing="false" onAction="#volverInterfaz1" text="Volver" />
+       <ListView layoutX="68.0" layoutY="71.0" prefHeight="200.0" prefWidth="200.0" fx:id="listaEquipos" visible="false"/>
+   </children>
+</AnchorPane>

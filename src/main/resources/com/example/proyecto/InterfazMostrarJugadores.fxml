@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyecto.Controlador.ControladorMostrarJugadores">
+   <children>
+      <ListView fx:id="listaEquipos" layoutX="156.0" layoutY="106.0" prefHeight="236.0" prefWidth="288.0" visible="true" />
+      <Label layoutX="125.0" layoutY="44.0" text="Los jugadores de tu equipo elegido son">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
