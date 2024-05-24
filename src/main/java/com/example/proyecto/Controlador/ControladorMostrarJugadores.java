@@ -12,6 +12,7 @@ import javafx.stage.Stage;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
 
@@ -22,13 +23,27 @@ public class ControladorMostrarJugadores {
 
     private Modelo modelo;
     private Equipo equipo;
+    private Jugador jugador;
     File archivo = new File("src/main/java/com/example/proyecto/Controlador/equipos.txt");
     public void initialize() {
         modelo = modelo.getInstance();
         equipo = modelo.getEquipo();
-        String[] equipos = leerArchivo(archivo);
-        listaEquipos.getItems().add(Arrays.toString(equipos));
+        leerArchivoNombreYApellidos();
+    }
+
+    public void confirmar(){
+        if (nombreEquipo.getText().trim().isEmpty()) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error de Validación");
+            alert.setHeaderText(null);
+            alert.setContentText("El nombre del equipo es obligatorio.");
+            alert.showAndWait();
+            return;
         }
+        escribirEquipo();
+        leerArchivo(archivo);
+        leerArchivoNombreYApellidos();
+    }
 
     public void cambiarInterfazMostrar(ActionEvent event) throws IOException {
         if (nombreEquipo.getText().trim().isEmpty()) {
@@ -44,7 +59,6 @@ public class ControladorMostrarJugadores {
         Stage stage = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
         stage.setScene(scene);
         stage.show();
-        escribirEquipo();
     }
     public void escribirEquipo(){
         String nombre = nombreEquipo.getText().trim();
@@ -59,23 +73,59 @@ public class ControladorMostrarJugadores {
         equipo.setNombreEquipo(nombre);
     }
 
-    public String[] leerArchivo(File archivo) {
+    public void leerArchivo(File archivo) {
         Scanner lector = null;
-        String[] partes = new String[0];
+        FileWriter fw = null;
         try {
             lector = new Scanner(archivo);
+            File archivoJugadores = new File("src/main/java/com/example/proyecto/Controlador/jugadores.txt");
+            fw = new FileWriter(archivoJugadores);
             while (lector.hasNext()) {
                 String linea = lector.nextLine();
-                partes = linea.split("\\|");
-                System.out.println(Arrays.toString(partes));
+                String[] partes = linea.split("\\|");
+
+                if (partes[0].trim().equals(equipo.getNombreEquipo().toUpperCase().trim())) {
+                    fw.write(partes[1].trim() +" " + partes[2].trim() + "\n");
+                    fw.flush();
+                }
             }
+
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         } finally {
-            lector.close();
-        };
-        return partes;
+            if (lector != null) {
+                lector.close();
+            }
+            if (fw != null) {
+                try {
+                    fw.close();
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        }
     }
+
+public String leerArchivoNombreYApellidos(){
+        File archivoNombreApellido = new File("src/main/java/com/example/proyecto/Controlador/jugadores.txt");
+    Scanner lector = null;
+    String linea = "";
+    try {
+        lector = new Scanner(archivoNombreApellido);
+        while (lector.hasNext()){
+            linea = lector.nextLine();
+            listaEquipos.getItems().add(linea);
+        }
+    } catch (FileNotFoundException e) {
+        throw new RuntimeException(e);
+    }finally {
+        lector.close();
+    }
+    return linea;
+}
+
 
 
     public void volverInterfaz1(ActionEvent event) throws IOException {

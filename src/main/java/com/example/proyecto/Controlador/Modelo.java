@@ -1,5 +1,8 @@
 package com.example.proyecto.Controlador;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Modelo {
         private static Modelo instance = null;
         private Equipo equipo;

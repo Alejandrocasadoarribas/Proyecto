@@ -72,7 +72,7 @@ public class ControladorInsertar {
     }
 
     public void escribirEquipo(){
-        String nombre = nombreEquipo.getText().trim();
+        String nombre = nombreEquipo.getText().toUpperCase().trim();
         if (nombre.isEmpty()) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error de Validación");
@@ -102,8 +102,8 @@ public class ControladorInsertar {
                 alert.showAndWait();
                 return;
             }
-            String nombre = nombreJugador.getText().trim();
-            String apellidoJugador = apellido.getText().trim();
+            String nombre = nombreJugador.getText().toUpperCase().trim();
+            String apellidoJugador = apellido.getText().toUpperCase().trim();
             int edadJugador = Integer.parseInt(edad.getText().trim());
             String minutos = minutosJugados.getText().trim();
             int posicionJugador = Integer.parseInt(posicion.getText().trim());
