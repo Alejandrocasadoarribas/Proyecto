@@ -21,6 +21,8 @@ public class ControladorMostrarJugadores {
     @FXML
     private ListView<String> listaEquipos;
 
+    int contador = 0;
+
     private Modelo modelo;
     private Equipo equipo;
     private Jugador jugador;
@@ -29,6 +31,11 @@ public class ControladorMostrarJugadores {
         modelo = modelo.getInstance();
         equipo = modelo.getEquipo();
         leerArchivoNombreYApellidos();
+        if (contador==1){
+            listaEquipos.getItems().add("El equipo tiene " + contador + " jugador");
+        }else {
+            listaEquipos.getItems().add("El equipo tiene " + contador + " jugadores");
+        }
     }
 
     public void confirmar(){
@@ -84,8 +91,8 @@ public class ControladorMostrarJugadores {
                 String linea = lector.nextLine();
                 String[] partes = linea.split("\\|");
 
-                if (partes[0].trim().equals(equipo.getNombreEquipo().toUpperCase().trim())) {
-                    fw.write(partes[1].trim() +" " + partes[2].trim() + "\n");
+                if (partes[0].toUpperCase().trim().equals(equipo.getNombreEquipo().toUpperCase().trim())) {
+                    fw.write(partes[1].trim() + " " + partes[2].trim() + "\n");
                     fw.flush();
                 }
             }
@@ -115,6 +122,7 @@ public String leerArchivoNombreYApellidos(){
     try {
         lector = new Scanner(archivoNombreApellido);
         while (lector.hasNext()){
+            contador++;
             linea = lector.nextLine();
             listaEquipos.getItems().add(linea);
         }
@@ -130,6 +138,14 @@ public String leerArchivoNombreYApellidos(){
 
     public void volverInterfaz1(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("/com/example/proyecto/InterfazBuena.fxml"));
+        Scene scene = new Scene(root);
+        Stage stage = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void volverInterfaz2(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/com/example/proyecto/InterfazBuscarEquipo.fxml"));
         Scene scene = new Scene(root);
         Stage stage = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
         stage.setScene(scene);

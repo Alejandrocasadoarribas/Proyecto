@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1a2bc8e-5045-4fc0-81cb-5441a3b5853f" name="Changes" comment="Terminando la pestaña buscar equipos para que nos filtre los jugadores de un determinado equipo falta qeu nos los muestre">
+    <list default="true" id="a1a2bc8e-5045-4fc0-81cb-5441a3b5853f" name="Changes" comment="pestaña filtrar por equipo terminada ahora falta filtrar en otra pestaña por los maximos goleadores etc">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/ControladorInsertar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/ControladorInsertar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/ControladorMostrarJugadores.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/ControladorMostrarJugadores.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/Modelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/Modelo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/equipos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/equipos.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/proyecto/InterfazBuscarEquipo.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/proyecto/InterfazBuscarEquipo.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/jugadores.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/jugadores.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/proyecto/InterfazMostrarJugadores.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/proyecto/InterfazMostrarJugadores.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +143,7 @@
       <workItem from="1716303232841" duration="11672000" />
       <workItem from="1716397557114" duration="1706000" />
       <workItem from="1716473311603" duration="4697000" />
-      <workItem from="1716566866627" duration="3907000" />
+      <workItem from="1716566866627" duration="6115000" />
     </task>
     <task id="LOCAL-00001" summary="Proyecto">
       <option name="closed" value="true" />
@@ -218,7 +217,23 @@
       <option name="project" value="LOCAL" />
       <updated>1716397257185</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="pestaña filtrar por equipo terminada ahora falta filtrar en otra pestaña por los maximos goleadores etc">
+      <option name="closed" value="true" />
+      <created>1716571022679</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1716571022679</updated>
+    </task>
+    <task id="LOCAL-00011" summary="pestaña filtrar por equipo terminada ahora falta filtrar en otra pestaña por los maximos goleadores etc">
+      <option name="closed" value="true" />
+      <created>1716571065522</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1716571065522</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,7 +256,8 @@
     <MESSAGE value="Ya he hecho la pestaña para insertar jugadores y ahora toca la de buscar por equipos" />
     <MESSAGE value="Pestaña insertar hecha" />
     <MESSAGE value="Terminando la pestaña buscar equipos para que nos filtre los jugadores de un determinado equipo falta qeu nos los muestre" />
-    <option name="LAST_COMMIT_MESSAGE" value="Terminando la pestaña buscar equipos para que nos filtre los jugadores de un determinado equipo falta qeu nos los muestre" />
+    <MESSAGE value="pestaña filtrar por equipo terminada ahora falta filtrar en otra pestaña por los maximos goleadores etc" />
+    <option name="LAST_COMMIT_MESSAGE" value="pestaña filtrar por equipo terminada ahora falta filtrar en otra pestaña por los maximos goleadores etc" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

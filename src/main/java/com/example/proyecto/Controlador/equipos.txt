@@ -6,3 +6,4 @@ ATLETICO NACIONAL | pepe | iniesto | 39 | DC | 7 | 100 | 10 | 10 |
 REAL MADRID | RODRYGO | GOES | 24 | EI | 11 | 2345 | 678 | 678 | 
 BARCELONA | FRENKIE | DE JONG | 27 | MC | 14 | 6789 | 3 | 2 | 
 VALENCIA | JOSE LUIS | GAYA | 29 | LI | 3 | 2642 | 2 | 6 | 
+BAYERN MUNICH | MANUEL | NEUER | 36 | POR | 1 | 4587 | 0 | 0 | 
