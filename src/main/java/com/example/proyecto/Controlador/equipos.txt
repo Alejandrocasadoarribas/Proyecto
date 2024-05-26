@@ -1,9 +1,9 @@
 ATLETICO NACIONAL | Johan | Enciso | 20 | DFC | 11 | 3456 | 5 | 6 |
 REAL MADRID | Alex | Casado | 21 | DFC | 4 | 2876 | 4 | 5 |
 REAL MADRID | Cristiano | Ronaldo | 38 | DC | 7 | 3456 | 54 | 12 |
-REAL MADRID | Antonio | Kroos | 34 | MC | 8 | 6433 | 6 | 9 |
-ATLETICO NACIONAL | pepe | iniesto | 39 | DC | 7 | 100 | 10 | 10 |
 REAL MADRID | RODRYGO | GOES | 24 | EI | 11 | 2345 | 678 | 678 | 
 BARCELONA | FRENKIE | DE JONG | 27 | MC | 14 | 6789 | 3 | 2 | 
 VALENCIA | JOSE LUIS | GAYA | 29 | LI | 3 | 2642 | 2 | 6 | 
-BAYERN MUNICH | MANUEL | NEUER | 36 | POR | 1 | 4587 | 0 | 0 | 
+BAYERN MUNICH | MANUEL | NEUER | 36 | POR | 1 | 4587 | 0 | 0 |
+REAL MADRID | LUKA | MODRIC | 38 | MC | 10 | 3264 | 2 | 4 | 
+REAL MADRID | BRAHIM | DIAZ | 24 | ED | 21 | 2034 | 16 | 20 | 

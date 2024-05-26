@@ -31,20 +31,30 @@
       <content>
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
-                  <Label layoutX="99.0" layoutY="47.0" prefHeight="138.0" prefWidth="402.0" text="En esta pestaña se podrá filtrar por un equipo en concreto para mostrar todos sus jugadores" textAlignment="CENTER" wrapText="true" >
+                  <Label layoutX="99.0" layoutY="47.0" prefHeight="138.0" prefWidth="402.0" text="En esta pestaña se podrá filtrar por un equipo en concreto para mostrar todos sus jugadores" textAlignment="CENTER" wrapText="true">
                       <font>
                           <Font size="14.0" />
                       </font></Label>
-                   <Button layoutX="460.0" layoutY="269.0" mnemonicParsing="false"  style="-fx-font-size: 20px; -fx-font-family: Arial; -fx-border-radius: 20px; -fx-background-radius: 20px;" text="Entrar" onAction="#cambiarInterfazBuscarEquipos">
+                   <Button layoutX="460.0" layoutY="269.0" mnemonicParsing="false" onAction="#cambiarInterfazBuscarEquipos" style="-fx-font-size: 20px; -fx-font-family: Arial; -fx-border-radius: 20px; -fx-background-radius: 20px;" text="Entrar">
                        <font>
                            <Font size="14.0" />
                        </font></Button>
                </children></AnchorPane>
       </content>
     </Tab>
-    <Tab text="Untitled Tab 3">
+    <Tab text="Estadisticas">
       <content>
-        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                   <Label layoutX="99.0" layoutY="47.0" prefHeight="138.0" prefWidth="402.0" text="En esta pagina se podran ver las estadisticas de todos los jugadores asi como los maximos goleadores etc." textAlignment="CENTER" wrapText="true">
+                       <font>
+                           <Font size="14.0" />
+                       </font></Label>
+                   <Button layoutX="460.0" layoutY="269.0" mnemonicParsing="false" onAction="#cambiarInterfazInformacionEstadisticas" style="-fx-font-size: 20px; -fx-font-family: Arial; -fx-border-radius: 20px; -fx-background-radius: 20px;" text="Entrar">
+                       <font>
+                           <Font size="14.0" />
+                       </font></Button>
+               </children></AnchorPane>
       </content>
     </Tab>
   </tabs>

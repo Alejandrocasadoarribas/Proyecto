@@ -5,11 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1a2bc8e-5045-4fc0-81cb-5441a3b5853f" name="Changes" comment="pestaña filtrar por equipo terminada ahora falta filtrar en otra pestaña por los maximos goleadores etc">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/Club.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/ControladorMostrarEstadisticas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/maximosGoleadores.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/proyecto/InterfazInformacionEstadisticas.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/proyecto/InterfazMaximosGoleadores.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/ControladorInsertar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/ControladorInsertar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/ControladorMostrarJugadores.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/ControladorMostrarJugadores.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/equipos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/equipos.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/jugadores.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/jugadores.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/proyecto/InterfazMostrarJugadores.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/proyecto/InterfazMostrarJugadores.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/proyecto/InterfazBuena.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/proyecto/InterfazBuena.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +34,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Alejandrocasadoarribas&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Alejandrocasadoarribas/Proyecto.git&quot;,
+    &quot;accountId&quot;: &quot;f89c93d7-f113-43ef-b2cd-72ccc53a5a93&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -38,18 +57,25 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.App.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Proyecto [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Proyecto [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Proyecto [org.openjfx:javafx-maven-plugin:0.0.8:run].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Proyecto [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Proyecto [validate].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/DAM/IdeaProjects/Proyecto/src/main/resources/com/example/proyecto&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.tools&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -108,6 +134,14 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.79" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -143,7 +177,13 @@
       <workItem from="1716303232841" duration="11672000" />
       <workItem from="1716397557114" duration="1706000" />
       <workItem from="1716473311603" duration="4697000" />
-      <workItem from="1716566866627" duration="6115000" />
+      <workItem from="1716566866627" duration="6303000" />
+      <workItem from="1716640719223" duration="503000" />
+      <workItem from="1716644569729" duration="106000" />
+      <workItem from="1716710613761" duration="3915000" />
+      <workItem from="1716718020038" duration="1352000" />
+      <workItem from="1716739905993" duration="1304000" />
+      <workItem from="1716741227948" duration="8477000" />
     </task>
     <task id="LOCAL-00001" summary="Proyecto">
       <option name="closed" value="true" />
@@ -233,7 +273,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716571065522</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="pestaña filtrar por equipo terminada ahora falta filtrar en otra pestaña por los maximos goleadores etc">
+      <option name="closed" value="true" />
+      <created>1716573002790</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1716573002790</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

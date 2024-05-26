@@ -177,6 +177,14 @@ public class ControladorInsertar {
         stage.show();
     }
 
+    public void cambiarInterfazInformacionEstadisticas(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/com/example/proyecto/InterfazInformacionEstadisticas.fxml"));
+        Scene scene = new Scene(root);
+        Stage stage = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+
     @FXML
     private Label welcomeText;
 

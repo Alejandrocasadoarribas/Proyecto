@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyecto.Controlador.ControladorMostrarEstadisticas">
+   <children>
+       <PieChart fx:id="pieChart" layoutX="-6.0" layoutY="6.0" title="Maximos goleadores" visible="false" />
+       <Button layoutX="332.0" layoutY="44.0" mnemonicParsing="false" onAction="#cambiarInterfazMaximosGoleadores" style="-fx-font-size: 20px; -fx-font-family: Arial; -fx-border-radius: 20px; -fx-background-radius: 20px;" text="Confirmar">
+
+           <font>
+               <Font size="14.0" />
+           </font></Button>
+      <Button layoutX="73.0" layoutY="44.0" mnemonicParsing="false" onAction="#leerArchivoEquipos" style="-fx-font-size: 20px; -fx-font-family: Arial; -fx-border-radius: 20px; -fx-background-radius: 20px;" text="Actualizar">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Line endX="25.0" endY="1.0000038146972656" layoutX="306.0" layoutY="61.0" startX="-116.99998474121094" startY="1.0000038146972656" />
+   </children>
+</AnchorPane>
