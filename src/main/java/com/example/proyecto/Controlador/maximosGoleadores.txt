@@ -1,3 +1,3 @@
 REAL MADRID | RODRYGO | GOES | 24 | EI | 11 | 2345 | 678 | 678
 REAL MADRID | Cristiano | Ronaldo | 38 | DC | 7 | 3456 | 54 | 12
-REAL MADRID | BRAHIM | DIAZ | 24 | ED | 21 | 2034 | 16 | 20
+PSG | MARCO | ASENSIO | 29 | ED | 11 | 2173 | 50 | 20

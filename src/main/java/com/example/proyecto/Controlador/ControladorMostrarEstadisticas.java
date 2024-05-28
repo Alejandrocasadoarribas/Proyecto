@@ -30,8 +30,8 @@ public class ControladorMostrarEstadisticas {
 
         ObservableList<PieChart.Data> pieChartData = FXCollections.observableArrayList();
         for (String[] jugador : jugadores) {
-            String nombreJugador = jugador[1] + jugador[2];
-            int goles = Integer.parseInt(jugador[3].trim());
+            String nombreJugador = jugador[1] + jugador[2] + " = " + Integer.parseInt(jugador[7].trim());
+            int goles = Integer.parseInt(jugador[7].trim());
             pieChartData.add(new PieChart.Data(nombreJugador, goles));
         }
         pieChart.setData(pieChartData);
@@ -100,6 +100,24 @@ public class ControladorMostrarEstadisticas {
             lector.close();
         }
         return jugadores;
+    }
+
+    public void volverInterfazInformacionEstadisticas(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/com/example/proyecto/InterfazInformacionEstadisticas.fxml"));
+        Scene scene = new Scene(root);
+        Stage stage = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void cambiarInterfazBuena(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/com/example/proyecto/InterfazBuena.fxml"));
+        Scene scene = new Scene(root);
+        Stage stage = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+
+
     }
 
 }

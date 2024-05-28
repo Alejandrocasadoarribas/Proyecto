@@ -4,19 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1a2bc8e-5045-4fc0-81cb-5441a3b5853f" name="Changes" comment="pestaña filtrar por equipo terminada ahora falta filtrar en otra pestaña por los maximos goleadores etc">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/Club.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/ControladorMostrarEstadisticas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/maximosGoleadores.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/proyecto/InterfazInformacionEstadisticas.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/proyecto/InterfazMaximosGoleadores.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a1a2bc8e-5045-4fc0-81cb-5441a3b5853f" name="Changes" comment="pestaña maximos goleadores hecha">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/proyecto/Imagenes/bota de oro.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/ControladorInsertar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/ControladorInsertar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/ControladorMostrarJugadores.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/ControladorMostrarJugadores.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/ControladorMostrarEstadisticas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/ControladorMostrarEstadisticas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/equipos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/equipos.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/jugadores.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/jugadores.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/proyecto/InterfazBuena.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/proyecto/InterfazBuena.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/maximosGoleadores.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Controlador/maximosGoleadores.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Modelo/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/proyecto/Modelo/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/proyecto/InterfazInformacionEstadisticas.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/proyecto/InterfazInformacionEstadisticas.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/proyecto/InterfazMaximosGoleadores.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/proyecto/InterfazMaximosGoleadores.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/proyecto/futbol.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +181,8 @@
       <workItem from="1716710613761" duration="3915000" />
       <workItem from="1716718020038" duration="1352000" />
       <workItem from="1716739905993" duration="1304000" />
-      <workItem from="1716741227948" duration="8477000" />
+      <workItem from="1716741227948" duration="8801000" />
+      <workItem from="1716901531105" duration="1994000" />
     </task>
     <task id="LOCAL-00001" summary="Proyecto">
       <option name="closed" value="true" />
@@ -281,7 +280,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716573002790</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="pestaña maximos goleadores hecha">
+      <option name="closed" value="true" />
+      <created>1716749990774</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1716749990774</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -305,7 +312,8 @@
     <MESSAGE value="Pestaña insertar hecha" />
     <MESSAGE value="Terminando la pestaña buscar equipos para que nos filtre los jugadores de un determinado equipo falta qeu nos los muestre" />
     <MESSAGE value="pestaña filtrar por equipo terminada ahora falta filtrar en otra pestaña por los maximos goleadores etc" />
-    <option name="LAST_COMMIT_MESSAGE" value="pestaña filtrar por equipo terminada ahora falta filtrar en otra pestaña por los maximos goleadores etc" />
+    <MESSAGE value="pestaña maximos goleadores hecha" />
+    <option name="LAST_COMMIT_MESSAGE" value="pestaña maximos goleadores hecha" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
